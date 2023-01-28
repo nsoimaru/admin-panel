@@ -24,3 +24,11 @@
     --trans-03: all 0.3s ease;
     --trans-02: all 0.2s ease;
 }
+
+nav .logo-image {
+    min-width: 45px;
+}
+
+nav .logo-image img {
+    width: 45px;
+}
