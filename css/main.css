@@ -53,6 +53,7 @@ nav {
     width: 250px;
     padding: 10px 14px;
     background: var(--panel-color);
+    border-right: 2px solid var(--border-color);
 }
 
 nav .logo-name {
@@ -129,6 +130,11 @@ nav .menu-items {
     color: var(--primary-color);
 }
 
+.menu-items .logout-mode {
+    padding-top: 10px;
+    border-top: 2px solid var(--border-color);
+}
+
 .menu-items .mode {
     display: flex;
     align-items: center;
@@ -169,4 +175,22 @@ nav .menu-items {
 
 body.dark .switch::before {
     left: 20px;
+}
+
+.dashboard {
+    position: relative;
+    left: 250px;
+    background: var(--panel-color);
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+}
+
+.dashboard .top {
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    width: calc(100% - 250px);
 }
