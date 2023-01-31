@@ -54,6 +54,12 @@ nav {
     padding: 10px 14px;
     background: var(--panel-color);
     border-right: 2px solid var(--border-color);
+    transition: var(--trans-05);
+}
+
+nav.close {
+    border: 1px solid rebeccapurple;
+    width: 73px;
 }
 
 nav .logo-name {
@@ -78,6 +84,13 @@ nav .logo-name .logo_name{
     font-weight: 600;
     color: var(--text-color);
     margin-left: 14px;
+    transition: var(--trans-05);
+}
+
+nav.close .logo_name {
+    /* display: inline; */
+    opacity: 0;
+    pointer-events: none;
 }
 
 nav .menu-items {
@@ -123,6 +136,12 @@ nav .menu-items {
     font-size: 18px;
     font-weight: 400;
     color: var(--black-light-color);
+    transition: var(--trans-05);
+}
+
+nav.close li a .link-name {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .nav-links li a:hover i,
@@ -188,9 +207,17 @@ body.dark .switch::before {
 
 .dashboard .top {
     position: fixed;
-
+    top: 0;
+    left: 250px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 14px;
     width: calc(100% - 250px);
+}
+
+.dashboard .top .sidebar-toggle {
+    font-size: 25px;
+    color: var(--text-color);
+    cursor: pointer;
 }
