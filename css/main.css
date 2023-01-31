@@ -157,6 +157,7 @@ nav.close li a .link-name {
 .menu-items .mode {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .menu-items .mode-toggle {
@@ -203,6 +204,12 @@ body.dark .switch::before {
     height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
+    transition: var(--trans-05);
+}
+
+nav.close ~ .dashboard {
+    left: 73px;
+    width: calc(100% - 73px);
 }
 
 .dashboard .top {
@@ -214,6 +221,12 @@ body.dark .switch::before {
     align-items: center;
     padding: 10px 14px;
     width: calc(100% - 250px);
+    transition: var(--trans-05);
+}
+
+nav.close ~ .dashboard .top{
+    left: 73px;
+    width: calc(100% - 73px);
 }
 
 .dashboard .top .sidebar-toggle {
